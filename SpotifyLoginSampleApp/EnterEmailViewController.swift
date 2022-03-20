@@ -57,7 +57,6 @@ class EnterEmailViewController : UIViewController {
                 self.showMainViewController()
             }
         }
-        
     }
     
     private func showMainViewController() {
@@ -79,7 +78,6 @@ class EnterEmailViewController : UIViewController {
             
         }
     }
-    
 }
 
 extension EnterEmailViewController: UITextFieldDelegate {

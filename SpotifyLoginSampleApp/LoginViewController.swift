@@ -17,6 +17,7 @@ class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //forEach 돌면서 버튼들의 디자인들 바꿔줌.
         [emailLoginButton, googleLoginButton, appleLoginButton].forEach{
             $0?.layer.borderWidth = 1
             $0?.layer.borderColor = UIColor.white.cgColor
@@ -34,10 +35,12 @@ class LoginViewController : UIViewController {
         GIDSignIn.sharedInstance().presentingViewController = self
     }
     
+    //구글 로그인 버튼 탭
     @IBAction func googleLoginButtonTap(_ sender: UIButton) {
         GIDSignIn.sharedInstance().signIn()
     }
     
+    //애플 로그인 버튼 탭
     @IBAction func appleLoginButtonTap(_ sender: UIButton) {
         
     }
